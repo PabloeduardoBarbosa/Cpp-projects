@@ -1,0 +1,18 @@
+#include <iostream>
+
+using namespace std;
+
+void print(*void ptr, *type){
+  switch(type){
+  case 'i': cout << *((int*)ptr) << endl;
+	break;
+  case 'c': cout << * ((char*)ptr) << endl;
+  }
+}
+
+int main(){
+
+  int number = 21;
+  char letter = 't';
+
+}

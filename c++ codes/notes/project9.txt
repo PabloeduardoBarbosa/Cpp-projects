@@ -1,0 +1,9 @@
+#include <iostream>
+#include <memory>
+
+using namespace std;
+
+int main(){
+	unique_ptr<int>UnPtr = makePtr<int>(32);
+	cout << *UnPtr;
+}

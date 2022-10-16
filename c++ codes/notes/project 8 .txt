@@ -1,0 +1,15 @@
+#include <iostream>
+
+using namespace std;
+
+int numbers(int a, int b){
+	return a + b;
+}
+
+int main(){
+	int(*ptr)(int, int) = numbers;
+	cout << ptr(4, 5);
+	// result 9 
+	cout << numbers(4, 5);
+	// result 9 
+}
